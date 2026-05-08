@@ -544,6 +544,50 @@ section .pill-label {
   filter: brightness(0.6) contrast(1.1);
 }
 
+.about-narrative {
+  margin: 32px 0;
+  padding-left: 24px;
+  border-left: 2px solid var(--primary);
+  color: var(--on-surface-variant);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.pillar-card {
+  padding: 32px;
+  border-radius: 24px;
+  transition: all 0.3s;
+}
+
+.pillar-card:hover {
+  background: rgba(179, 197, 255, 0.05);
+  border-color: var(--primary);
+  transform: translateY(-5px);
+}
+
+.pillar-icon {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.pillar-card h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.pillar-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
 /* Services */
 .services-grid {
   display: grid;
