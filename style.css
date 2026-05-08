@@ -1142,20 +1142,41 @@ footer {
   }
 
   .display-xl {
-    font-size: 42px;
+    font-size: 38px;
+    line-height: 1.1;
   }
 
   .headline-lg {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .hero-section {
-    padding-top: 120px;
-    gap: 40px;
+    padding-top: 100px;
+    gap: 32px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-visual {
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  .code-editor-container {
+    height: 400px;
+  }
+
+  .editor-body {
+    padding: 20px;
+    font-size: 13px;
   }
 
   .hero-terminal {
