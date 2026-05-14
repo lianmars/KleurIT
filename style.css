@@ -825,6 +825,268 @@ section .pill-label {
   transform: scale(1.05);
 }
 
+/* ── Carousel infinito de servicios ── */
+.services-section {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: hidden;
+}
+
+.services-section .pill-label,
+.services-section .section-title {
+  padding-left: var(--margin-page);
+  padding-right: var(--margin-page);
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  /* máscaras de desvanecimiento en los bordes */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.carousel-wrapper:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.carousel-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+  padding: 16px 0 32px;
+}
+
+.carousel-track .service-card {
+  width: 360px;
+  flex-shrink: 0;
+  /* override any transform: scale from .featured so cards stay same height */
+  transform: none !important;
+  transition: box-shadow 0.4s, border-color 0.4s, transform 0.4s;
+}
+
+.carousel-track .service-card:hover {
+  transform: translateY(-10px) !important;
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px var(--primary-glow);
+}
+
+.carousel-track .service-card.featured {
+  box-shadow: 0 0 30px rgba(179, 197, 255, 0.15);
+  padding-top: 64px;
+}
+
+.carousel-track .service-card.landing-card {
+  padding-top: 64px;
+}
+
+/* ── Badge "Más Solicitado" ── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.badge-popular {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Gradiente dorado premium */
+  background: linear-gradient(
+    90deg,
+    #c9952a 0%,
+    #f5c842 30%,
+    #ffe8a0 50%,
+    #f5c842 70%,
+    #c9952a 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+
+  color: #1a0800;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  padding: 8px 24px;
+  border-radius: 0 0 14px 14px;
+
+  box-shadow:
+    0 4px 20px rgba(245, 200, 66, 0.45),
+    0 1px 0 rgba(255,255,255,0.3) inset;
+
+  z-index: 10;
+}
+
+/* Badge "Mejor Precio" — Landing Page */
+.badge-entry {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    90deg,
+    #1565c0 0%,
+    #4d9fff 30%,
+    #a8d4ff 50%,
+    #4d9fff 70%,
+    #1565c0 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+
+  color: #001433;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  padding: 8px 24px;
+  border-radius: 0 0 14px 14px;
+
+  box-shadow:
+    0 4px 20px rgba(77, 159, 255, 0.5),
+    0 1px 0 rgba(255,255,255,0.25) inset;
+
+  z-index: 10;
+}
+
+/* ── Neon individual por tarjeta ── */
+
+/* Card 1 & 5 → Neon Azul — Landing Page */
+.carousel-track .service-card:nth-child(4n+1) {
+  border-color: rgba(77, 159, 255, 0.55);
+  box-shadow:
+    0 0 18px rgba(77, 159, 255, 0.25),
+    0 0 40px rgba(77, 159, 255, 0.10),
+    inset 0 0 16px rgba(77, 159, 255, 0.04);
+}
+.carousel-track .service-card:nth-child(4n+1)::before {
+  background: linear-gradient(135deg, rgba(77, 159, 255, 0.45), transparent 55%);
+}
+.carousel-track .service-card:nth-child(4n+1) .card-icon {
+  background: rgba(77, 159, 255, 0.18);
+  box-shadow: 0 0 12px rgba(77, 159, 255, 0.3);
+}
+.carousel-track .service-card:nth-child(4n+1) .price {
+  color: #4d9fff;
+  text-shadow: 0 0 10px rgba(77, 159, 255, 0.6);
+}
+.carousel-track .service-card:nth-child(4n+1):hover {
+  border-color: rgba(77, 159, 255, 0.85) !important;
+  box-shadow:
+    0 0 28px rgba(77, 159, 255, 0.45),
+    0 0 60px rgba(77, 159, 255, 0.20),
+    0 -10px 0 0 transparent !important;
+}
+
+/* Card 2 & 6 → Neon Violeta — Página Institucional */
+.carousel-track .service-card:nth-child(4n+2) {
+  border-color: rgba(192, 132, 252, 0.55);
+  box-shadow:
+    0 0 18px rgba(192, 132, 252, 0.25),
+    0 0 40px rgba(192, 132, 252, 0.10),
+    inset 0 0 16px rgba(192, 132, 252, 0.04);
+}
+.carousel-track .service-card:nth-child(4n+2)::before {
+  background: linear-gradient(135deg, rgba(192, 132, 252, 0.45), transparent 55%);
+}
+.carousel-track .service-card:nth-child(4n+2) .card-icon {
+  background: rgba(192, 132, 252, 0.18);
+  box-shadow: 0 0 12px rgba(192, 132, 252, 0.3);
+}
+.carousel-track .service-card:nth-child(4n+2) .price {
+  color: #c084fc;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.6);
+}
+.carousel-track .service-card:nth-child(4n+2):hover {
+  border-color: rgba(192, 132, 252, 0.85) !important;
+  box-shadow:
+    0 0 28px rgba(192, 132, 252, 0.45),
+    0 0 60px rgba(192, 132, 252, 0.20),
+    0 -10px 0 0 transparent !important;
+}
+
+/* Card 3 & 7 → Neon Cian — E-Commerce */
+.carousel-track .service-card:nth-child(4n+3) {
+  border-color: rgba(0, 219, 231, 0.55);
+  box-shadow:
+    0 0 18px rgba(0, 219, 231, 0.25),
+    0 0 40px rgba(0, 219, 231, 0.10),
+    inset 0 0 16px rgba(0, 219, 231, 0.04);
+}
+.carousel-track .service-card:nth-child(4n+3)::before {
+  background: linear-gradient(135deg, rgba(0, 219, 231, 0.45), transparent 55%);
+}
+.carousel-track .service-card:nth-child(4n+3) .card-icon {
+  background: rgba(0, 219, 231, 0.18);
+  box-shadow: 0 0 12px rgba(0, 219, 231, 0.3);
+}
+.carousel-track .service-card:nth-child(4n+3) .price {
+  color: #00dbe7;
+  text-shadow: 0 0 10px rgba(0, 219, 231, 0.6);
+}
+.carousel-track .service-card:nth-child(4n+3):hover {
+  border-color: rgba(0, 219, 231, 0.85) !important;
+  box-shadow:
+    0 0 28px rgba(0, 219, 231, 0.45),
+    0 0 60px rgba(0, 219, 231, 0.20),
+    0 -10px 0 0 transparent !important;
+}
+
+/* Card 4 & 8 → Neon Rosa — Infoproductos */
+.carousel-track .service-card:nth-child(4n) {
+  border-color: rgba(244, 114, 182, 0.55);
+  box-shadow:
+    0 0 18px rgba(244, 114, 182, 0.25),
+    0 0 40px rgba(244, 114, 182, 0.10),
+    inset 0 0 16px rgba(244, 114, 182, 0.04);
+}
+.carousel-track .service-card:nth-child(4n)::before {
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.45), transparent 55%);
+}
+.carousel-track .service-card:nth-child(4n) .card-icon {
+  background: rgba(244, 114, 182, 0.18);
+  box-shadow: 0 0 12px rgba(244, 114, 182, 0.3);
+}
+.carousel-track .service-card:nth-child(4n) .price {
+  color: #f472b6;
+  text-shadow: 0 0 10px rgba(244, 114, 182, 0.6);
+}
+.carousel-track .service-card:nth-child(4n):hover {
+  border-color: rgba(244, 114, 182, 0.85) !important;
+  box-shadow:
+    0 0 28px rgba(244, 114, 182, 0.45),
+    0 0 60px rgba(244, 114, 182, 0.20),
+    0 -10px 0 0 transparent !important;
+}
+
 /* Projects */
 .projects-grid {
   display: grid;
