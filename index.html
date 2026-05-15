@@ -4,342 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>KleurIT | Ingeniería de Software Futurista</title>
-
-    <meta name="description"
-        content="KleurIT - Desarrollo de software premium, automatizaciones y experiencias digitales cinematográficas.">
-
-    <!-- FAVICON -->
+    <title>KleurIT | High-Performance Engineering</title>
+    <meta name="description" content="KleurIT - Premium software development, cinematic interfaces, and scalable digital architectures.">
     <link rel="icon" type="image/png" href="/logo_kleurit.png">
-
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="ambient-background">
-        <div class="glow glow-1"></div>
-        <div class="glow glow-2"></div>
-        <div class="glow glow-3"></div>
-    </div>
+    <!-- Ambient Background Elements -->
+    <div class="ambient-bg"></div>
+    <div class="grid-bg"></div>
+
+    <!-- Navigation -->
     <nav>
-        <div class="logo">Kleur<span>IT</span></div>
-        <div class="nav-toggle" id="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav-links" id="nav-menu">
-            <a href="#about">Nosotros</a>
-            <a href="#services">Servicios</a>
-            <a href="#projects">Portafolio</a>
-            <a href="#contact">Contacto</a>
+        <div class="nav-container">
+            <div class="logo">Kleur<span>IT</span></div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="nav-menu">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Capabilities</a>
+                <a href="#contact">Contact</a>
+                <!-- Sticky CTA for Conversion -->
+                <a href="#contact" class="btn btn-primary nav-btn-desktop">Get a Proposal</a>
+            </div>
         </div>
     </nav>
 
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <div class="pill-label label-sm">INNOVACIÓN TECNOLÓGICA</div>
-                <h1 class="display-xl">Ingeniería de <br><span>Software para el Futuro</span></h1>
-                <p class="body-lg">Desarrollamos soluciones SaaS escalables y software a medida que transforman la
-                    arquitectura digital de tu empresa con precisión técnica.</p>
+            <div class="hero-content reveal">
+                <div class="pill-label">TECHNOLOGICAL INNOVATION</div>
+                <h1 class="display-xl">High-Precision<br>Software Engineering.</h1>
+                <p class="body-lg">We build digital platforms, cinematic interfaces, and robust backend architectures designed to scale at the highest level and drive revenue.</p>
                 <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Iniciar Proyecto</a>
-                    <a href="#projects" class="btn btn-secondary">Ver Portafolio</a>
+                    <!-- High-conversion CTAs -->
+                    <a href="#contact" class="btn btn-primary cta-pulse">Get Your Free Proposal</a>
+                    <a href="#projects" class="btn btn-secondary">View Our Work</a>
+                </div>
+                
+                <!-- Trust Strip (Social Proof above the fold) -->
+                <div class="trust-strip reveal">
+                    <p>Trusted by 50+ forward-thinking agencies & startups across the US</p>
+                    <div class="trust-logos">
+                        <span>✦ Acme Corp</span>
+                        <span>✦ Global Reach</span>
+                        <span>✦ Nexa Tech</span>
+                        <span>✦ Zenith Media</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="hero-visual">
-                <div class="code-editor-container glass-premium reveal">
-                    <div class="editor-header">
-                        <div class="dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="file-tab">main.js</div>
+            <!-- Hero Visual (Terminal Mockup) -->
+            <div class="hero-visual reveal">
+                <div class="editor-header">
+                    <div class="editor-dots">
+                        <span></span><span></span><span></span>
                     </div>
-                    <div class="editor-body" id="code-typing">
-                        <!-- Animación de escritura de código -->
-                    </div>
+                    <div class="label-sm">kleurit-system.js</div>
                 </div>
-
-                <div class="floating-card glass-premium reveal">
-                    <div class="card-icon">⚡</div>
-                    <div>
-                        <div class="label-sm">Optimización</div>
-                        <p>Arquitectura Limpia</p>
-                    </div>
+                <div class="editor-body" id="code-typing">
+                    <!-- Typing animation goes here -->
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="reveal">
-            <div class="pill-label label-sm">SOBRE NOSOTROS</div>
-            <h2 class="headline-lg section-title">Elevando el <span>estándar tecnológico</span></h2>
+        <!-- About Section (Bento Grid) -->
+        <section id="about">
+            <div class="pill-label reveal">ABOUT US</div>
+            <h2 class="headline-lg section-title reveal">Elevating the technological standard</h2>
 
-            <div class="about-main">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p class="body-lg">En KleurIT, no solo escribimos código; construimos cimientos digitales
-                            sólidos. Nuestra misión es dotar a las empresas de herramientas tecnológicas que no solo
-                            resuelvan problemas actuales, sino que anticipen los desafíos del mañana.</p>
-
-                        <div class="about-narrative">
-                            <p class="body-md">Nacimos de la necesidad de fusionar la <strong>ingeniería de software de
-                                    alta precisión</strong> con una estética visual cinematográfica. Creemos que el
-                                software no solo debe ser funcional, sino que debe inspirar confianza a través de su
-                                arquitectura y diseño.</p>
-                        </div>
-
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <div class="stat-value">99.9%</div>
-                                <div class="label-sm">Uptime de Sistemas</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-value">250+</div>
-                                <div class="label-sm">Proyectos Entregados</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image glass-premium">
-                        <img src="about_team.png" alt="Engineering Team" class="about-img">
-                    </div>
+            <div class="bento-grid">
+                <!-- Large Item -->
+                <div class="bento-item bento-large spotlight-card reveal">
+                    <div class="bento-icon">⚡</div>
+                    <h3 class="headline-md">Clean Architecture & Performance</h3>
+                    <p class="body-md" style="margin-top: 16px;">
+                        At KleurIT we don't just write code; we design solid foundations. Every millisecond counts, which is why we apply modern design patterns, optimized databases, and seamless deployments. Faster websites equal higher conversion rates.
+                    </p>
                 </div>
-
-                <div class="pillars-grid">
-                    <div class="pillar-card glass reveal">
-                        <div class="pillar-icon">🛠️</div>
-                        <h4>Arquitectura Robusta</h4>
-                        <p class="body-md">Diseñamos sistemas escalables que crecen con tu negocio, utilizando patrones
-                            de diseño modernos y microservicios.</p>
+                <!-- Small Item -->
+                <div class="bento-item bento-small spotlight-card reveal">
+                    <div class="bento-icon">🛡️</div>
+                    <h3 class="headline-md">Bank-grade Security</h3>
+                    <p class="body-md" style="margin-top: 16px;">Integration of advanced protocols and end-to-end encryption to protect your users and your business reputation.</p>
+                </div>
+                <!-- Full Item with Stats -->
+                <div class="bento-item bento-full spotlight-card reveal">
+                    <div>
+                        <h3 class="headline-md">Fluid Experiences that Convert</h3>
+                        <p class="body-md" style="margin-top: 16px;">Pixel-perfect interfaces and micro-interactions that transform simple navigation into a memorable digital product. We design with user psychology in mind to maximize user retention.</p>
                     </div>
-                    <div class="pillar-card glass reveal">
-                        <div class="pillar-icon">🎨</div>
-                        <h4>UX Cinemática</h4>
-                        <p class="body-md">Interfaces fluidas y micro-interacciones que transforman la navegación en una
-                            experiencia cinematográfica.</p>
-                    </div>
-                    <div class="pillar-card glass reveal">
-                        <div class="pillar-icon">⚡</div>
-                        <h4>Performance Elite</h4>
-                        <p class="body-md">Optimización extrema de velocidad y recursos para garantizar que cada
-                            milisegundo cuente.</p>
-                    </div>
-                    <div class="pillar-card glass reveal">
-                        <div class="pillar-icon">🛡️</div>
-                        <h4>Seguridad Integral</h4>
-                        <p class="body-md">Protección proactiva y cifrado de grado militar para resguardar la integridad
-                            de tus datos.</p>
+                    <div class="stats-container">
+                        <div>
+                            <div class="stat-value">99.9%</div>
+                            <div class="label-sm">Guaranteed Uptime</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">+40%</div>
+                            <div class="label-sm">Avg. Conversion Boost</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="reveal services-section">
-            <div class="pill-label label-sm" style="margin-inline: auto;">SOLUCIONES A MEDIDA</div>
-            <h2 class="headline-lg section-title">Nuestros <span>Servicios Premium</span></h2>
+        <section id="services" class="services-section">
+            <div style="text-align: center;">
+                <div class="pill-label reveal">SOLUTIONS</div>
+                <h2 class="headline-lg section-title reveal">Premium Services</h2>
+            </div>
 
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper reveal">
                 <div class="carousel-track">
-                    <!-- Set original -->
-                    <div class="service-card glass-premium landing-card">
-                        <div class="badge-entry">⚡ Mejor Precio</div>
-                        <div class="card-icon">🚀</div>
-                        <div class="label-sm">ELITE DIGITAL</div>
-                        <h3>Landing Page</h3>
-                        <p class="body-md">Landing pages de alto rendimiento diseñadas para convertir con
-                            micro-interacciones avanzadas y arquitectura SEO optimizada.</p>
-                        <div class="price"><span>DESDE</span> $200 USD</div>
-                        <a href="#contact" class="btn btn-secondary">Solicitar servicio</a>
+                    <!-- Set 1 -->
+                    <div class="service-card spotlight-card">
+                        <div class="label-sm">DIGITAL ELITE</div>
+                        <h3>Landing Pages</h3>
+                        <p>High-performance design with advanced animations, optimized for maximum conversion and flawless SEO.</p>
+                        <div class="price">From $200 USD</div>
+                        <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                     </div>
-                    <div class="service-card glass-premium featured">
-                        <div class="badge-popular">⭐ Más Solicitado</div>
-                        <div class="card-icon">🏛️</div>
-                        <div class="label-sm">PRESENCIA PROFESIONAL</div>
-                        <h3>Web Corporativa</h3>
-                        <p class="body-md">Sitios web corporativos que transmiten confianza y solidez, con diseño a medida,
-                            navegación fluida y gestión de contenidos.</p>
-                        <div class="price"><span>DESDE</span> $500 USD</div>
-                        <a href="#contact" class="btn btn-primary">Solicitar servicio</a>
+                    <div class="service-card spotlight-card" style="border-color: rgba(255,255,255,0.4);">
+                        <div class="label-sm" style="color: #fff;">CORPORATE PRESENCE</div>
+                        <h3>SaaS & Web Systems</h3>
+                        <p>Complex platforms with authentication, analytical dashboards, and robust databases built to scale.</p>
+                        <div class="price">From $500 USD</div>
+                        <a href="#contact" class="btn btn-primary">Start Project</a>
                     </div>
-                    <div class="service-card glass-premium">
-                        <div class="card-icon">🛒</div>
-                        <div class="label-sm">COMERCIO DIGITAL</div>
+                    <div class="service-card spotlight-card">
+                        <div class="label-sm">GLOBAL COMMERCE</div>
                         <h3>E-Commerce</h3>
-                        <p class="body-md">Tiendas online de alto rendimiento con catálogos dinámicos, pasarelas de pago
-                            seguras y experiencia de compra optimizada.</p>
-                        <div class="price"><span>DESDE</span> $750 USD</div>
-                        <a href="#contact" class="btn btn-secondary">Solicitar servicio</a>
+                        <p>Scalable stores with international payment gateways and highly responsive checkout flows.</p>
+                        <div class="price">From $750 USD</div>
+                        <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                     </div>
-                    <div class="service-card glass-premium">
-                        <div class="card-icon">💡</div>
-                        <div class="label-sm">CONOCIMIENTO DIGITAL</div>
-                        <h3>Infoproductos</h3>
-                        <p class="body-md">Diseño y desarrollo de productos digitales: cursos, ebooks y membresías
-                            con landing optimizada para máxima conversión.</p>
-                        <div class="price"><span>DESDE</span> $300 USD</div>
-                        <a href="#contact" class="btn btn-secondary">Solicitar servicio</a>
+                    <div class="service-card spotlight-card">
+                        <div class="label-sm">DIGITAL GOODS</div>
+                        <h3>Digital Products</h3>
+                        <p>Platforms for courses and memberships with user management, video protection, and automated billing.</p>
+                        <div class="price">From $300 USD</div>
+                        <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                     </div>
-                    <!-- Set duplicado para loop infinito -->
-                    <div class="service-card glass-premium landing-card">
-                        <div class="badge-entry">⚡ Mejor Precio</div>
-                        <div class="card-icon">🚀</div>
-                        <div class="label-sm">ELITE DIGITAL</div>
-                        <h3>Landing Page</h3>
-                        <p class="body-md">Landing pages de alto rendimiento diseñadas para convertir con
-                            micro-interacciones avanzadas y arquitectura SEO optimizada.</p>
-                        <div class="price"><span>DESDE</span> $200 USD</div>
-                        <a href="#contact" class="btn btn-secondary">Solicitar servicio</a>
+
+                    <!-- Set 2 (Duplicated for infinite loop) -->
+                    <div class="service-card spotlight-card">
+                        <div class="label-sm">DIGITAL ELITE</div>
+                        <h3>Landing Pages</h3>
+                        <p>High-performance design with advanced animations, optimized for maximum conversion and flawless SEO.</p>
+                        <div class="price">From $200 USD</div>
+                        <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                     </div>
-                    <div class="service-card glass-premium featured">
-                        <div class="badge-popular">⭐ Más Solicitado</div>
-                        <div class="card-icon">🏛️</div>
-                        <div class="label-sm">PRESENCIA PROFESIONAL</div>
-                        <h3>Web Corporativa</h3>
-                        <p class="body-md">Sitios web corporativos que transmiten confianza y solidez, con diseño a medida,
-                            navegación fluida y gestión de contenidos.</p>
-                        <div class="price"><span>DESDE</span> $500 USD</div>
-                        <a href="#contact" class="btn btn-primary">Solicitar servicio</a>
+                    <div class="service-card spotlight-card" style="border-color: rgba(255,255,255,0.4);">
+                        <div class="label-sm" style="color: #fff;">CORPORATE PRESENCE</div>
+                        <h3>SaaS & Web Systems</h3>
+                        <p>Complex platforms with authentication, analytical dashboards, and robust databases built to scale.</p>
+                        <div class="price">From $500 USD</div>
+                        <a href="#contact" class="btn btn-primary">Start Project</a>
                     </div>
-                    <div class="service-card glass-premium">
-                        <div class="card-icon">🛒</div>
-                        <div class="label-sm">COMERCIO DIGITAL</div>
+                    <div class="service-card spotlight-card">
+                        <div class="label-sm">GLOBAL COMMERCE</div>
                         <h3>E-Commerce</h3>
-                        <p class="body-md">Tiendas online de alto rendimiento con catálogos dinámicos, pasarelas de pago
-                            seguras y experiencia de compra optimizada.</p>
-                        <div class="price"><span>DESDE</span> $750 USD</div>
-                        <a href="#contact" class="btn btn-secondary">Solicitar servicio</a>
+                        <p>Scalable stores with international payment gateways and highly responsive checkout flows.</p>
+                        <div class="price">From $750 USD</div>
+                        <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                     </div>
-                    <div class="service-card glass-premium">
-                        <div class="card-icon">💡</div>
-                        <div class="label-sm">CONOCIMIENTO DIGITAL</div>
-                        <h3>Infoproductos</h3>
-                        <p class="body-md">Diseño y desarrollo de productos digitales: cursos, ebooks y membresías
-                            con landing optimizada para máxima conversión.</p>
-                        <div class="price"><span>DESDE</span> $300 USD</div>
-                        <a href="#contact" class="btn btn-secondary">Solicitar servicio</a>
+                    <div class="service-card spotlight-card">
+                        <div class="label-sm">DIGITAL GOODS</div>
+                        <h3>Digital Products</h3>
+                        <p>Platforms for courses and memberships with user management, video protection, and automated billing.</p>
+                        <div class="price">From $300 USD</div>
+                        <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Capabilities Section (ex-Projects) -->
-        <section id="projects" class="reveal">
-            <div class="pill-label label-sm">CAPACIDADES TÉCNICAS</div>
-            <h2 class="headline-lg section-title">Lo que podemos <span>construir para ti</span></h2>
-            <div style="text-align: center; margin-top: -40px; margin-bottom: 60px;">
-                <a href="#contact" class="explore-link label-sm">Solicitar cotización <span>→</span></a>
-            </div>
-            <div class="projects-layout">
-                <div class="project-item large glass reveal">
-                    <img src="nexus_dashboard.png" alt="SaaS Dashboard Concept">
-                    <div class="project-overlay">
-                        <div class="label-sm">SaaS / DASHBOARDS</div>
-                        <h4>Sistemas de Gestión</h4>
-                        <p>Interfaces analíticas complejas con procesamiento de datos en tiempo real.</p>
-                    </div>
-                </div>
-                <div class="project-item small glass reveal">
-                    <img src="mobile_app_ui.png" alt="Mobile UI Concept">
-                    <div class="project-overlay">
-                        <div class="label-sm">MOBILE / WEB APPS</div>
-                        <h4>Experiencias Nativas</h4>
-                        <p>Aplicaciones progresivas con interfaces ultra fluidas.</p>
-                    </div>
-                </div>
-                <div class="project-item small glass reveal">
-                    <img src="futuristic_chip.png" alt="Backend Architecture Concept">
-                    <div class="project-overlay">
-                        <div class="label-sm">ARCHITECTURE / API</div>
-                        <h4>Infraestructura Cloud</h4>
-                        <p>Bases de datos escalables y arquitecturas de alta disponibilidad.</p>
+        <!-- Social Proof / Testimonials (Crucial for CRO) -->
+        <section id="testimonials" style="padding-top: 60px; padding-bottom: 60px;">
+            <div class="bento-item spotlight-card reveal" style="text-align: center; padding: 64px 40px;">
+                <h2 class="headline-md" style="margin-bottom: 24px;">"The attention to detail and engineering quality is unmatched."</h2>
+                <p class="body-md" style="max-width: 600px; margin: 0 auto 32px;">"KleurIT didn't just build us a website; they engineered a platform that increased our lead generation by 40% in the first month. Their architecture is flawless."</p>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; background: #333; display: flex; align-items: center; justify-content: center; font-weight: bold;">JD</div>
+                    <div style="text-align: left;">
+                        <strong style="display: block; font-size: 15px;">James D.</strong>
+                        <span class="label-sm">CEO, TechFlow Agency</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section (comentado temporalmente)
-        <section id="testimonials" class="reveal">
-            <div class="pill-label label-sm" style="margin-inline: auto;">TESTIMONIOS</div>
-            <h2 class="headline-lg section-title">Voces de <span>Confianza</span></h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card glass reveal">
-                    <div class="stars">★★★★★</div>
-                    <p class="body-md">"La atención al detalle en la arquitectura del software fue excepcional.
-                        Superaron nuestras expectativas en cada hito."</p>
-                    <div class="user">
-                        <div class="avatar">AR</div>
-                        <div class="user-info">
-                            <strong>Alejandro Rossi</strong>
-                            <span class="label-sm">CTO, TechFlow Solutions</span>
-                        </div>
-                    </div>
+        <!-- Contact Section (Optimized for Conversion) -->
+        <section id="contact">
+            <div class="contact-container reveal spotlight-card" style="max-width: 700px;">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <div class="pill-label">FREE CONSULTATION</div>
+                    <h2 class="headline-lg">Let's build your vision</h2>
+                    <p class="body-md" style="margin-top: 16px;">Tell us about your goals. We'll get back to you with a tailored technical proposal and timeline within 24 hours.</p>
                 </div>
-                <div class="testimonial-card glass reveal">
-                    <div class="stars">★★★★★</div>
-                    <p class="body-md">"Gracias a KleurIT, nuestra eficiencia operativa mejoró un 40% tras la
-                        implementación de las automatizaciones."</p>
-                    <div class="user">
-                        <div class="avatar" style="background: var(--tertiary);">MV</div>
-                        <div class="user-info">
-                            <strong>Marta Varela</strong>
-                            <span class="label-sm">Founder, Visionary Lab</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card glass reveal">
-                    <div class="stars">★★★★★</div>
-                    <p class="body-md">"Su capacidad para traducir conceptos de negocio complejos en una interfaz de
-                        usuario fluida es inigualable."</p>
-                    <div class="user">
-                        <div class="avatar" style="background: var(--secondary);">JP</div>
-                        <div class="user-info">
-                            <strong>Julian Perez</strong>
-                            <span class="label-sm">Head of Design, Kreativ Studio</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        --> <!-- fin de sección comentada -->
-
-        <!-- Contact Section -->
-        <section id="contact" class="reveal">
-            <div class="contact-card glass-premium">
-                <h2 class="headline-lg section-title">Construyamos el <span>Futuro</span></h2>
-                <p class="body-md" style="text-align: center; margin-bottom: 40px; color: var(--on-surface-variant);">
-                    Cuéntanos sobre tu proyecto y nos pondremos en contacto en menos de 24 horas.</p>
+                
                 <form id="contact-form" action="https://formspree.io/f/xlgzwane" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Nombre Completo" required>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;" class="form-grid-mobile">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <input type="text" name="name" placeholder="Full Name" required>
                         </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Email Corporativo" required>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <input type="email" name="email" placeholder="Work Email" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <select name="service" required>
-                            <option value="" disabled selected>Selecciona un servicio</option>
-                            <option value="Landing">Landing Page — desde $200 USD</option>
-                            <option value="Infoproductos">Infoproductos — desde $300 USD</option>
-                            <option value="Corporativa">Web Corporativa — desde $500 USD</option>
-                            <option value="Ecommerce">E-Commerce — desde $750 USD</option>
+                            <option value="" disabled selected>Select a service of interest</option>
+                            <option value="Landing">Landing Page</option>
+                            <option value="Systems">SaaS / Web Systems</option>
+                            <option value="Ecommerce">E-Commerce</option>
+                            <option value="DigitalProducts">Digital Products</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" rows="4" placeholder="Detalles del Proyecto"></textarea>
+                        <textarea name="message" rows="4" placeholder="Briefly describe your project or main challenge..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary"
-                        style="width: 100%; border-radius: 12px; padding: 18px; font-size: 14px;">Enviar
-                        Propuesta</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 16px; font-weight: 600;">Get My Proposal Now</button>
+                    <p style="text-align: center; font-size: 13px; color: var(--text-muted); margin-top: 16px;">🔒 100% Secure. No credit card or commitment required.</p>
                 </form>
             </div>
         </section>
@@ -349,31 +242,32 @@
         <div class="footer-content">
             <div class="footer-info">
                 <div class="logo">Kleur<span>IT</span></div>
-                <p>Ingeniería de software de alta precisión para la próxima generación de empresas digitales.</p>
+                <p>High-conversion software engineering, cinematic interfaces, and scalable architectures for modern agencies.</p>
             </div>
             <div class="footer-links">
-                <h4>Empresa</h4>
-                <a href="#about">Nosotros</a>
-                <a href="#services">Servicios</a>
-                <a href="#projects">Proyectos</a>
-            </div>
-            <div class="footer-links">
-                <h4>Social</h4>
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter / X</a>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Capabilities</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter / X</a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 KleurIT. Arquitectura de Software con Integridad.</p>
-            <div class="footer-legal">
-                <a href="#" style="margin-left: 20px; color: inherit; text-decoration: none;">Privacidad</a>
-                <a href="#" style="margin-left: 20px; color: inherit; text-decoration: none;">Términos</a>
+            <p>© 2026 KleurIT. All rights reserved.</p>
+            <div>
+                <a href="#" style="color: inherit; text-decoration: none; margin-left: 20px;">Privacy Policy</a>
+                <a href="#" style="color: inherit; text-decoration: none; margin-left: 20px;">Terms of Service</a>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
